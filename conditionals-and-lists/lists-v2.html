@@ -1,0 +1,21 @@
+<meta charset="UTF-8" />
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+  <ul>
+    <li v-for="(color, i) in colors"><span>{{ i + 1 }})</span> {{ color }}</li>
+  </ul>
+</div>
+
+<script>
+  new Vue({
+    el: "#app",
+    data: {
+      colors: ["vermeleho", "verde", "amarelo", "azul"],
+      people: [
+        { name: "Ana", idade: 26, weight: 59 },
+        { name: "Guilherme", idade: 22, weight: 89 },
+      ],
+    },
+  });
+</script>
