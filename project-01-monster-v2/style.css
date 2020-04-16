@@ -1,0 +1,201 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+#app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: darkgreen; */
+  background: url(imgs/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.panel {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff80;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.left-panel,
+.right-panel {
+  max-width: 400px;
+  width: 100%;
+}
+.left-panel {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.right-panel {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.middle-panel {
+  display: flex;
+  flex: 1;
+  min-width: 400px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Avatar Area */
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.avatar img {
+  max-width: 80%;
+  max-height: 200px;
+  height: auto;
+  width: auto;
+}
+.player-avatar {
+  /* position: absolute; */
+  bottom: 20px;
+  left: 20px;
+}
+.monster-avatar {
+  /* position: absolute; */
+  top: 20px;
+  right: 20px;
+}
+
+/* Dots Areas */
+.scores {
+  display: flex;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff80;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.score h1 {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+.life-bar {
+  width: 80%;
+  height: 20px;
+  border: 1px solid #666;
+  background-color: #ffffff80;
+}
+.life-bar .life {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  background-color: green;
+}
+.life-bar .life-danger {
+  background-color: red;
+}
+
+/* Result Area */
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.result .win {
+  color: green;
+}
+.result .lose {
+  color: red;
+}
+
+/* Buttons Area */
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+.new-game {
+  background-color: #4253af;
+  color: #fff;
+}
+.attack {
+  background-color: #e51c23;
+  color: #fff;
+}
+.attack:disabled {
+  background-color: #9b0d12;
+}
+.special-attack {
+  background-color: #ff9800;
+  color: #000;
+}
+.special-attack:disabled {
+  background-color: #c77600;
+}
+.heal {
+  background-color: #259b24;
+  color: #fff;
+}
+.heal:disabled {
+  background-color: #186618;
+}
+.give-up {
+  background-color: #bbb;
+  color: #000;
+}
+
+/* Logs Area */
+.log {
+  overflow: auto;
+  max-height: 150px;
+}
+.log ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.log ul li {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0;
+  padding: 3px 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.player {
+  background-color: #4253afaa;
+  color: #fff;
+}
+.monster {
+  background-color: #e51c23aa;
+  color: #fff;
+}
