@@ -10,6 +10,22 @@
 <script>
 export default {
   // props: ["texto"],
+  created() {
+    // When not inner of <keep-alive></keep-alive>
+    console.log("[Citacao] created");
+  },
+  detroyed() {
+    // When not inner of <keep-alive></keep-alive>
+    console.log("[Citacao] detroyed");
+  },
+  actived() {
+    // When inner of <keep-alive></keep-alive>
+    console.log("[Citacao] actived");
+  },
+  deactived() {
+    // When inner of <keep-alive></keep-alive>
+    console.log("[Citacao] deactived");
+  },
 };
 </script>
 

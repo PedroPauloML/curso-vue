@@ -48,6 +48,22 @@ export default {
       return Math.abs(this.numero % 3);
     },
   },
+  created() {
+    // When not inner of <keep-alive></keep-alive>
+    console.log("[Citacoes] created");
+  },
+  detroyed() {
+    // When not inner of <keep-alive></keep-alive>
+    console.log("[Citacoes] detroyed");
+  },
+  actived() {
+    // When inner of <keep-alive></keep-alive>
+    console.log("[Citacoes] actived");
+  },
+  deactived() {
+    // When inner of <keep-alive></keep-alive>
+    console.log("[Citacoes] deactived");
+  },
 };
 </script>
 
