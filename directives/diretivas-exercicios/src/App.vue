@@ -3,6 +3,9 @@
 		<h1>Diretivas</h1>
 		<p v-text="'Usando diretiva v-text'"></p>
 		<p v-html="'Usando diretiva <strong>v-html</strong>'"></p>
+		<p v-destaque="'blue'">Usando diretiva personalizada</p>
+		<p v-destaque:fundo="'lightblue'">Usando diretiva personalizada</p>
+		<p v-destaque:fundo.atrasar="'lightgreen'">Usando diretiva personalizada</p>
 	</div>
 </template>
 
