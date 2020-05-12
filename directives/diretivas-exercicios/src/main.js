@@ -8,7 +8,7 @@ Vue.directive("destaque", {
     // el.style.backgroundColor = "lightgreen";
     let atraso = 0;
 
-    if (binding.modifiers["atrasar"]) atraso = 3000;
+    if (binding.modifiers["atrasar"]) atraso = 1500;
 
     setTimeout(() => {
       if (binding.arg === "fundo") {
